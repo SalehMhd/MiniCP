@@ -16,9 +16,10 @@ namespace MiniCPTest
                 new RangeDomain<int> { LowBound = 4, HighBound = 6 }
             };
 
-            var x = new Variable<int>(domainsList);
+            var x = new Variable<int> { Domains = domainsList };
 
-            var rule = new Rule();
+            var rule = new SmallerThan<int> { Operand1 = new Constant<int> { Value = 5 }, Operand2 = x };
+
             rule.Operand(x).LargerThan().Operand(5);
 
             var context = new CPContext();

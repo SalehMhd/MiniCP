@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <Folder Include="Domains\" />
+    <Folder Include="Rules\" />
+    <Folder Include="Operands\" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{96279725-8AA3-4806-BE82-6F562B3EC721}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MiniCPTest/UnitTest1.cs">
+    <Files>
+      <File FileName="MiniCPTest/UnitTest1.cs" Line="22" Column="13" />
+      <File FileName="MiniCP/Domains/RangeDomain.cs" Line="4" Column="18" />
+      <File FileName="MiniCP/Operands/Variable.cs" Line="8" Column="54" />
+      <File FileName="MiniCP/Rules/IRule.cs" Line="2" Column="17" />
+      <File FileName="MiniCP/Rules/SmallerThan.cs" Line="8" Column="9" />
+      <File FileName="MiniCP/Operands/Constant.cs" Line="6" Column="6" />
+      <File FileName="MiniCP/Operands/Operand.cs" Line="8" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MiniCPTest PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
