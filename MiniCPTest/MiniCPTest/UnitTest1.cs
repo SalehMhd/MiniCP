@@ -20,10 +20,8 @@ namespace MiniCPTest
 
             var rule = new SmallerThan<int> { Operand1 = new Constant<int> { Value = 5 }, Operand2 = x };
 
-            rule.Operand(x).LargerThan().Operand(5);
-
             var context = new CPContext();
-            context.add(rule);
+            context.Add(rule);
 
             //Act
             var xAssignments = context.evaluate();

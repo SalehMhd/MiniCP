@@ -6,13 +6,14 @@ namespace MiniCP
         public Operand<T> Operand1 { get; set; }
         public Operand<T> Operand2 { get; set; }
 
-        public SmallerThan()
-        {
-        }
-
         public void Propagate()
         {
-            throw new NotImplementedException();
+            if(Operand1 is Variable<T>) {
+                var operand1Var = Operand1 as Variable<T>;
+
+
+
+            }
         }
     }
 }
