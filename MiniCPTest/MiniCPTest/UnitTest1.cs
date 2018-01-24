@@ -24,7 +24,7 @@ namespace MiniCPTest
             context.Add(rule);
 
             //Act
-            var xAssignments = context.evaluate();
+            var xAssignments = context.Evaluate();
 
             //Assert
             Assert.AreEqual(6, x.Value());
