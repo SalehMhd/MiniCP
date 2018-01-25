@@ -11,14 +11,14 @@ namespace MiniCPTest
         public void TestMethod1()
         {
             //Arrange
-            var domainsList = new List<RangeDomain> {
+            var domainsList = new List<IDomain> {
                 new RangeDomain { LowBound = 1, HighBound = 3, Step = 1},
                 new RangeDomain { LowBound = 4, HighBound = 6 , Step = 1}
             };
 
-            var x = new Variable<int> { Domains = domainsList };
+            var x = new Variable { Domains = domainsList };
 
-            var rule = new SmallerThan<int> { Operand1 = new Constant<int> { Value = 5 }, Operand2 = x };
+            var rule = new SmallerThan { Operand1 = new Constant { Value = 5 }, Operand2 = x };
 
             var context = new CPContext();
             context.Add(rule);

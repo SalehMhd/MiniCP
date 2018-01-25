@@ -9,6 +9,11 @@ namespace MiniCP
 
         public int NextValue(int value)
         {
+            if (value == int.MinValue)
+            {
+                return LowBound;
+            }
+
             if (value < LowBound || value > HighBound)
             {
                 throw new Exception("Input value out of range");
@@ -16,10 +21,11 @@ namespace MiniCP
 
             if (value + Step > HighBound || value + Step < LowBound)
             {
-                return -1;
+                return int.MaxValue;
             }
 
             return value + Step;
         }
+
     }
 }

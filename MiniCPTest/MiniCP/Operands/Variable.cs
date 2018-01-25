@@ -8,7 +8,7 @@ namespace MiniCP
     {
         public List<IDomain> Domains { get; set; }// Check for intervening domains
 
-        private int lastValue = -1; 
+        private int lastValue = int.MinValue; 
         private int currentDomainIndex = -1;
 
         public int NextValue()
@@ -18,35 +18,28 @@ namespace MiniCP
                 throw new Exception("Initialize Domains");
             }
 
-            //Add check for range domains (Casting Exception)
-            if (lastValue == -1)
+            if (currentDomainIndex == -1)
             {
-                lastValue = ((RangeDomain)Domains[0]).LowBound;
+                lastValue = Domains[0].NextValue(lastValue);
                 currentDomainIndex = 0;
                 return lastValue;
             }
 
-            if (Domains[currentDomainIndex] is RangeDomain domain)
+            var value = Domains[currentDomainIndex].NextValue(lastValue);
+            if (value == int.MaxValue)
             {
-                var value = domain.NextValue(lastValue);
-                if (value == -1)
-                {
-                    currentDomainIndex++;
-                }
-
-
-            }
-
-            if (lastValue == ((RangeDomain)).HighBound)
-            {
+                currentDomainIndex++;
                 if (currentDomainIndex == Domains.Count - 1)
                 {
-                    return -1;
+                    return int.MaxValue;
                 }
-                currentDomainIndex++;
+
+                lastValue = Domains[currentDomainIndex].NextValue(lastValue);
+                return lastValue;
             }
 
-            
+            return value;
+           
         }
    }
 }
