@@ -1,7 +1,7 @@
 ﻿using System;
 namespace MiniCP
 {
-    public interface IDomain<T>
+    public interface IDomain
     {
     }
 }

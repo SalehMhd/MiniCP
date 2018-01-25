@@ -1,7 +1,7 @@
 ﻿using System;
 namespace MiniCP
 {
-    public class Constant<T> : Operand<T>
+    public class Constant : Operand
     {
     }
 }

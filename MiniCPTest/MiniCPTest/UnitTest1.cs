@@ -11,9 +11,9 @@ namespace MiniCPTest
         public void TestMethod1()
         {
             //Arrange
-            var domainsList = new List<IDomain<int>> {
-                new RangeDomain<int> { LowBound = 1, HighBound = 3 },
-                new RangeDomain<int> { LowBound = 4, HighBound = 6 }
+            var domainsList = new List<RangeDomain> {
+                new RangeDomain { LowBound = 1, HighBound = 3, Step = 1},
+                new RangeDomain { LowBound = 4, HighBound = 6 , Step = 1}
             };
 
             var x = new Variable<int> { Domains = domainsList };
