@@ -1,22 +1,29 @@
-﻿<Properties StartupConfiguration="{96279725-8AA3-4806-BE82-6F562B3EC721}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MiniCP/Rules/SmallerThan.cs">
+﻿<Properties StartupConfiguration="{644F6515-16EF-4E1B-A9D8-19F913017B51}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../MiniCPTests/UnitTest1.cs">
     <Files>
-      <File FileName="MiniCPTest/UnitTest1.cs" Line="21" Column="67" />
-      <File FileName="MiniCP/Domains/RangeDomain.cs" Line="50" Column="2" />
-      <File FileName="MiniCP/Operands/Variable.cs" Line="60" Column="2" />
-      <File FileName="MiniCP/Rules/IRule.cs" Line="2" Column="17" />
-      <File FileName="MiniCP/Rules/SmallerThan.cs" Line="15" Column="25" />
+      <File FileName="MiniCP/Domains/RangeDomain.cs" Line="37" Column="31" />
+      <File FileName="MiniCP/Operands/Variable.cs" Line="10" Column="9" />
+      <File FileName="MiniCP/Rules/IRule.cs" Line="9" Column="1" />
+      <File FileName="MiniCP/Rules/SmallerThan.cs" Line="36" Column="13" />
       <File FileName="MiniCP/Operands/Constant.cs" Line="8" Column="16" />
       <File FileName="MiniCP/Operands/Operand.cs" Line="6" Column="9" />
-      <File FileName="MiniCP/CPContext.cs" Line="18" Column="14" />
-      <File FileName="MiniCP/Domains/IDomain.cs" Line="11" Column="2" />
+      <File FileName="MiniCP/CPContext.cs" Line="36" Column="41" />
+      <File FileName="MiniCP/Domains/IDomain.cs" Line="10" Column="28" />
+      <File FileName="../MiniCPTests/UnitTest1.cs" Line="14" Column="22" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="MiniCP" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MiniCPTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.MiniCPTest PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

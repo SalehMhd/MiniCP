@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCPTest", "MiniCPTest\MiniCPTest.csproj", "{96279725-8AA3-4806-BE82-6F562B3EC721}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCP", "MiniCP\MiniCP.csproj", "{D86E24BC-F468-4BEB-A729-0B423B69FE58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCPTests", "..\MiniCPTests\MiniCPTests.csproj", "{644F6515-16EF-4E1B-A9D8-19F913017B51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96279725-8AA3-4806-BE82-6F562B3EC721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96279725-8AA3-4806-BE82-6F562B3EC721}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96279725-8AA3-4806-BE82-6F562B3EC721}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96279725-8AA3-4806-BE82-6F562B3EC721}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D86E24BC-F468-4BEB-A729-0B423B69FE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D86E24BC-F468-4BEB-A729-0B423B69FE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D86E24BC-F468-4BEB-A729-0B423B69FE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D86E24BC-F468-4BEB-A729-0B423B69FE58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{644F6515-16EF-4E1B-A9D8-19F913017B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644F6515-16EF-4E1B-A9D8-19F913017B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644F6515-16EF-4E1B-A9D8-19F913017B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644F6515-16EF-4E1B-A9D8-19F913017B51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

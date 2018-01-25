@@ -1,0 +1,16 @@
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/bin/Debug/netcoreapp2.0/MiniCPTests.deps.json
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/bin/Debug/netcoreapp2.0/MiniCPTests.runtimeconfig.json
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/bin/Debug/netcoreapp2.0/MiniCPTests.runtimeconfig.dev.json
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/bin/Debug/netcoreapp2.0/MiniCPTests.dll
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/bin/Debug/netcoreapp2.0/MiniCPTests.pdb
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/bin/Debug/netcoreapp2.0/MiniCP.dll
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/bin/Debug/netcoreapp2.0/MiniCP.pdb
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/obj/Debug/netcoreapp2.0/MiniCPTests.csprojResolveAssemblyReference.cache
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/obj/Debug/netcoreapp2.0/MiniCPTests.csproj.CoreCompileInputs.cache
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/obj/Debug/netcoreapp2.0/MiniCPTests.AssemblyInfoInputs.cache
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/obj/Debug/netcoreapp2.0/MiniCPTests.AssemblyInfo.cs
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/obj/Debug/netcoreapp2.0/MiniCPTests.dll
+/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/obj/Debug/netcoreapp2.0/MiniCPTests.pdb
