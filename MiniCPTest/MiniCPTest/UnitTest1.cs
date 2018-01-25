@@ -18,9 +18,10 @@ namespace MiniCPTest
 
             var x = new Variable { Domains = domainsList };
 
-            var rule = new SmallerThan { Operand1 = new Constant { Value = 5 }, Operand2 = x };
+            var rule = new SmallerThan { Operand1 = new Constant(5), Operand2 = x };
 
             var context = new CPContext();
+            context.Add(x);
             context.Add(rule);
 
             //Act

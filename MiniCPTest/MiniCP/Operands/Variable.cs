@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace MiniCP
 {
-    public class Variable : Operand
+    public class Variable : IOperand
     {
         public List<IDomain> Domains { get; set; }// Check for intervening domains
 
@@ -41,5 +41,20 @@ namespace MiniCP
             return value;
            
         }
-   }
+
+        public int Value()
+        {
+            if(lastValue == int.MinValue)
+            {
+                lastValue = this.NextValue();
+            }
+            return this.lastValue;
+        }
+
+        public void RemoveValue(int value)
+        {
+            var domainsList = Domains[currentDomainIndex].Remove(value);
+            Domains.AddRange(domainsList);
+        }
+    }
 }

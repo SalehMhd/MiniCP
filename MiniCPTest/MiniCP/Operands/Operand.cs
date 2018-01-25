@@ -1,8 +1,8 @@
 ﻿using System;
 namespace MiniCP
 {
-    public class Operand
+    public interface IOperand
     {
-        public int Value {get; set;}
+        int Value();
     }
 }

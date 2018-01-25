@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{96279725-8AA3-4806-BE82-6F562B3EC721}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MiniCP/Domains/RangeDomain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MiniCP/Rules/SmallerThan.cs">
     <Files>
-      <File FileName="MiniCPTest/UnitTest1.cs" Line="27" Column="48" />
-      <File FileName="MiniCP/Domains/RangeDomain.cs" Line="4" Column="18" />
-      <File FileName="MiniCP/Operands/Variable.cs" Line="8" Column="54" />
+      <File FileName="MiniCPTest/UnitTest1.cs" Line="21" Column="67" />
+      <File FileName="MiniCP/Domains/RangeDomain.cs" Line="50" Column="2" />
+      <File FileName="MiniCP/Operands/Variable.cs" Line="60" Column="2" />
       <File FileName="MiniCP/Rules/IRule.cs" Line="2" Column="17" />
-      <File FileName="MiniCP/Rules/SmallerThan.cs" Line="15" Column="1" />
-      <File FileName="MiniCP/Operands/Constant.cs" Line="6" Column="6" />
-      <File FileName="MiniCP/Operands/Operand.cs" Line="8" Column="2" />
-      <File FileName="MiniCP/Rule.cs" Line="1" Column="1" />
-      <File FileName="MiniCP/CPContext.cs" Line="22" Column="13" />
-      <File FileName="MiniCP/Domains/IDomain.cs" Line="1" Column="1" />
+      <File FileName="MiniCP/Rules/SmallerThan.cs" Line="15" Column="25" />
+      <File FileName="MiniCP/Operands/Constant.cs" Line="8" Column="16" />
+      <File FileName="MiniCP/Operands/Operand.cs" Line="6" Column="9" />
+      <File FileName="MiniCP/CPContext.cs" Line="18" Column="14" />
+      <File FileName="MiniCP/Domains/IDomain.cs" Line="11" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
