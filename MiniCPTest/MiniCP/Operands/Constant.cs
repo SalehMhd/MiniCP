@@ -12,7 +12,7 @@ namespace MiniCP
 
         public int Value()
         {
-            throw new NotImplementedException();
+            return this.value;
         }
     }
 }

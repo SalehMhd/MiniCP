@@ -5,8 +5,8 @@ namespace MiniCP
 {
     public class CPContext
     {
-        private List<IRule> Rules { get; set; }
-        private List<Variable> Variables { get; set; }
+        private List<IRule> Rules = new List<IRule>();
+        private List<Variable> Variables = new List<Variable>();
 
         public void Add(IRule rule) {
             this.Rules.Add(rule);
