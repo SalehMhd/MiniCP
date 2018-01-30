@@ -7,54 +7,47 @@ namespace MiniCP
     {
         public int LowBound { get; set; }
         public int HighBound { get; set; }
-        public int Step { get; set; }
 
         public int NextValue(int value)
         {
-            if (value == int.MinValue)
+            if (value < LowBound)
             {
                 return LowBound;
             }
 
-            if (value < LowBound || value > HighBound)
-            {
-                throw new Exception("Input value out of range");
-            }
-
-            if (value + Step > HighBound || value + Step < LowBound)
+            if(value >= HighBound)
             {
                 return int.MaxValue;
             }
 
-            return value + Step;
+            return value + 1;
         }
 
         public List<int> Values()
         {
             var values = new List<int>();
-            for (var i = LowBound; i <= HighBound; i+=Step)
+            for (var i = LowBound; i <= HighBound; i+=1)
             {
                 values.Add(i);
             }
             return values;
         }
 
-        List<IDomain> IDomain.Remove(int value)
+        public void Remove(int value)
         {
-            if(value == this.LowBound){
-                this.LowBound += Step;
-                return new List<IDomain>{this};
+            if (value == this.LowBound)
+            {
+                this.LowBound += 1;
+                return;
             }
 
-            if(value == this.HighBound){
-                this.HighBound -= Step;
-                return new List<IDomain> { this };
+            if (value == this.HighBound)
+            {
+                this.HighBound -= 1;
+                return;
             }
 
-            return new List<IDomain>{
-                new RangeDomain{ LowBound = this.LowBound, HighBound = value-Step },
-                new RangeDomain{ LowBound = value+Step, HighBound = this.HighBound}
-            };
+            throw new Exception("value within the range, could not be removed");
         }
     }
 }

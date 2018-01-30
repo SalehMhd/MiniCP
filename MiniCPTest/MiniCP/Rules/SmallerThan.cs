@@ -9,9 +9,10 @@
         {
             if(Operand1 is Variable) {
                 var valueSmall = ((Variable)Operand1).NextValue();
+                var valueBig = Operand2.Value();
+
                 while(valueSmall != int.MaxValue)
                 {
-                    var valueBig = Operand2.Value();
                     if (valueSmall > valueBig)
                     {
                         ((Variable)Operand1).RemoveValue(valueSmall);
@@ -23,10 +24,11 @@
             if (Operand2 is Variable)
             {
                 var valueBig = ((Variable)Operand2).NextValue();
+                var valueSmall = Operand1.Value();
+
                 while (valueBig != int.MaxValue)
                 {
-                    var valueSmall = Operand1.Value();
-                    if (valueSmall > valueBig)
+                    if (valueSmall >= valueBig)
                     {
                         ((Variable)Operand2).RemoveValue(valueBig);
                     }

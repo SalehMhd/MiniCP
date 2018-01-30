@@ -12,8 +12,8 @@ namespace MiniCPTests
         {
             //Arrange
             var domainsList = new List<IDomain> {
-                new RangeDomain { LowBound = 1, HighBound = 3, Step = 1},
-                new RangeDomain { LowBound = 4, HighBound = 6 , Step = 1}
+                //new RangeDomain { LowBound = 1, HighBound = 3},
+                new RangeDomain { LowBound = 4, HighBound = 6}
             };
 
             var x = new Variable { Domains = domainsList };
@@ -28,7 +28,7 @@ namespace MiniCPTests
             var xAssignments = context.Evaluate();
 
             //Assert
-            Assert.AreEqual(6, x.Value());            
+            Assert.AreEqual(6, x.Values()[0]);            
         }
     }
 }

@@ -12,7 +12,7 @@ namespace MiniCP
 
         public int Value()
         {
-            return this.value;
+            return value;
         }
     }
 }

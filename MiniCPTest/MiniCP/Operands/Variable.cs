@@ -6,7 +6,7 @@ namespace MiniCP
 {
     public class Variable : IOperand
     {
-        public List<IDomain> Domains { get; set; }// Check for intervening domains
+        public List<IDomain> Domains { get; set; }
 
         private int lastValue = int.MinValue; 
         private int currentDomainIndex = -1;
@@ -29,7 +29,7 @@ namespace MiniCP
             if (value == int.MaxValue)
             {
                 currentDomainIndex++;
-                if (currentDomainIndex == Domains.Count - 1)
+                if (currentDomainIndex == Domains.Count)
                 {
                     return int.MaxValue;
                 }
@@ -38,6 +38,7 @@ namespace MiniCP
                 return lastValue;
             }
 
+            lastValue = value;
             return value;
            
         }
@@ -51,10 +52,27 @@ namespace MiniCP
             return this.lastValue;
         }
 
+        public List<int> Values()
+        {
+            var valuesList = new List<int>();
+
+            foreach(var domain in this.Domains)
+            {
+                valuesList.AddRange(domain.Values());
+            }
+
+            return valuesList;
+        }
+
         public void RemoveValue(int value)
         {
-            var domainsList = Domains[currentDomainIndex].Remove(value);
-            Domains.AddRange(domainsList);
+            Domains[currentDomainIndex].Remove(value);
+
+            var rangeDomain = (RangeDomain)Domains[currentDomainIndex];
+            if( rangeDomain.LowBound > rangeDomain.HighBound )
+            {
+                Domains.RemoveAt(currentDomainIndex);
+            }
         }
     }
 }
