@@ -6,7 +6,7 @@ namespace MiniCP
     public interface IDomain
     {
         int NextValue(int value);
-        void Remove(int value);
+        int Remove(int value);
         List<int> Values();
     }
 }

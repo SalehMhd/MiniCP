@@ -66,12 +66,20 @@ namespace MiniCP
 
         public void RemoveValue(int value)
         {
-            Domains[currentDomainIndex].Remove(value);
+            IDomain principleDomain = null;
 
-            var rangeDomain = (RangeDomain)Domains[currentDomainIndex];
-            if( rangeDomain.LowBound > rangeDomain.HighBound )
+            foreach(var domain in Domains)
             {
-                Domains.RemoveAt(currentDomainIndex);
+                if (domain.Remove(value) == 1)
+                {
+                    principleDomain = domain;
+                    break;   
+                }
+            }
+
+            if( (principleDomain as RangeDomain).LowBound > (principleDomain as RangeDomain).HighBound )
+            {
+                Domains.Remove(principleDomain);
             }
         }
     }

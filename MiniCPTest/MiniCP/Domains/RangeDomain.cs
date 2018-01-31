@@ -33,21 +33,24 @@ namespace MiniCP
             return values;
         }
 
-        public void Remove(int value)
+        public int Remove(int value)
         {
             if (value == this.LowBound)
             {
                 this.LowBound += 1;
-                return;
+                return 1;
             }
 
             if (value == this.HighBound)
             {
                 this.HighBound -= 1;
-                return;
+                return 1;
             }
 
-            throw new Exception("value within the range, could not be removed");
+            if(value > LowBound && value < HighBound)
+                throw new Exception("value within the range, could not be removed");
+
+            return 0;
         }
     }
 }
