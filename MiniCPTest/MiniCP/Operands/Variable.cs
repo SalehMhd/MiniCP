@@ -13,9 +13,14 @@ namespace MiniCP
 
         public int NextValue()
         {
-            if (Domains == null || !Domains.Any())
+            if (Domains == null)
             {
                 throw new Exception("Initialize Domains");
+            }
+
+            if(!Domains.Any())
+            {
+                return int.MaxValue;
             }
 
             if (currentDomainIndex == -1)
@@ -29,7 +34,7 @@ namespace MiniCP
             if (value == int.MaxValue)
             {
                 currentDomainIndex++;
-                if (currentDomainIndex == Domains.Count)
+                if (currentDomainIndex >= Domains.Count)
                 {
                     return int.MaxValue;
                 }

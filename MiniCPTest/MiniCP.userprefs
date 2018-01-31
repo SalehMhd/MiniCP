@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{644F6515-16EF-4E1B-A9D8-19F913017B51}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../MiniCPTests/RangeDomainTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../MiniCPTests/UnitTest1.cs">
     <Files>
-      <File FileName="MiniCP/Domains/RangeDomain.cs" Line="36" Column="16" />
-      <File FileName="MiniCP/Operands/Variable.cs" Line="68" Column="10" />
+      <File FileName="MiniCP/Domains/RangeDomain.cs" Line="53" Column="22" />
+      <File FileName="MiniCP/Operands/Variable.cs" Line="86" Column="2" />
       <File FileName="MiniCP/Rules/IRule.cs" Line="6" Column="14" />
-      <File FileName="MiniCP/Rules/SmallerThan.cs" Line="38" Column="13" />
+      <File FileName="MiniCP/Rules/SmallerThan.cs" Line="23" Column="13" />
       <File FileName="MiniCP/Operands/Constant.cs" Line="15" Column="26" />
       <File FileName="MiniCP/Operands/Operand.cs" Line="6" Column="9" />
-      <File FileName="MiniCP/CPContext.cs" Line="28" Column="13" />
-      <File FileName="MiniCP/Domains/IDomain.cs" Line="9" Column="20" />
+      <File FileName="MiniCP/CPContext.cs" Line="35" Column="18" />
+      <File FileName="MiniCP/Domains/IDomain.cs" Line="11" Column="6" />
       <File FileName="../MiniCPTests/UnitTest1.cs" Line="2" Column="52" />
-      <File FileName="../MiniCPTests/RangeDomainTests.cs" Line="130" Column="47" />
-      <File FileName="../MiniCPTests/VariableTests.cs" Line="1" Column="1" />
+      <File FileName="../MiniCPTests/RangeDomainTests.cs" Line="136" Column="2" />
+      <File FileName="../MiniCPTests/VariableTests.cs" Line="172" Column="1" />
+      <File FileName="../MiniCPTests/SmallerThanTests.cs" Line="1" Column="1" />
+      <File FileName="MiniCP/Class1.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
@@ -19,15 +21,8 @@
           <Node name="MiniCP" expanded="True">
             <Node name="MiniCPTests" expanded="True">
               <Node name="MiniCPTests" expanded="True">
-                <Node name="RangeDomainTests" expanded="True">
-                  <Node name="Lower_bound_equal_to_higher_bound_returns_one_value" selected="True" />
-                  <Node name="Lower_bound_lower_then_higher_bound_returns_values_count" selected="True" />
-                  <Node name="Next_to_higher_bound_is_int_max" selected="True" />
-                  <Node name="Next_to_higher_than_higher_bound_is_int_max" selected="True" />
-                  <Node name="Next_to_less_than_lower_bound_is_lower_bound" selected="True" />
-                  <Node name="Next_to_lower_bound_is_lower_bound_plus_1" selected="True" />
-                  <Node name="Next_to_value_in_domain_is_value_plus_1" selected="True" />
-                </Node>
+                <Node name="UnitTest1" expanded="True" />
+                <Node name="VariableTests" expanded="True" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -39,6 +34,8 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/saleh/Projects/DotNet/MiniCP/MiniCPTest/MiniCP/CPContext.cs" relfile="MiniCP/CPContext.cs" line="27" column="1" />
+      <Breakpoint file="/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/VariableTests.cs" relfile="s/VariableTests.cs" line="173" column="1" />
+      <Breakpoint file="/Users/saleh/Projects/DotNet/MiniCP/MiniCPTests/VariableTests.cs" relfile="s/VariableTests.cs" line="169" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

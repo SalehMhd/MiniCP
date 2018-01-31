@@ -1,4 +1,6 @@
-﻿namespace MiniCP
+﻿using System.Linq;
+
+namespace MiniCP
 {
     public class SmallerThan : IRule
     {
@@ -13,25 +15,27 @@
 
                 while(valueSmall != int.MaxValue)
                 {
-                    if (valueSmall > valueBig)
+                    if (valueSmall >= valueBig)
                     {
                         ((Variable)Operand1).RemoveValue(valueSmall);
                     }
+                        
                     valueSmall = ((Variable)Operand1).NextValue();
                 }
             }
 
             if (Operand2 is Variable)
             {
-                var valueBig = ((Variable)Operand2).NextValue();
                 var valueSmall = Operand1.Value();
+                var valueBig = ((Variable)Operand2).NextValue();
 
                 while (valueBig != int.MaxValue)
                 {
-                    if (valueSmall >= valueBig)
+                    if (valueBig <= valueSmall )
                     {
                         ((Variable)Operand2).RemoveValue(valueBig);
                     }
+
                     valueBig = ((Variable)Operand2).NextValue();
                 }
             }

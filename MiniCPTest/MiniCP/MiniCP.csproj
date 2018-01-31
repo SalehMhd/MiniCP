@@ -10,4 +10,7 @@
     <Folder Include="Operands\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
 </Project>
